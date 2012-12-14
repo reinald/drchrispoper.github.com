@@ -452,6 +452,7 @@ iframe{
 			Footer
 ==============================================*/
 #footer {
+	margin-top: 20px;
 	border-top:3px double #ccc;
 	color:#666;
 }
