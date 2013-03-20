@@ -81,7 +81,7 @@ html{
 	h6 { font-size: 14px; line-height: 21px; }
 	.subheader { color: #777; }
 
-	p { margin: 0 0 20px 0; }
+	p { margin: 0 0 20px 0; color: #472f2c;}
 	p img { margin: 0; }
 	p.lead { font-size: 21px; line-height: 27px; color: #777;  }
 
@@ -488,6 +488,11 @@ min-height: 100%;
 height: auto !important;
 height: 100%;
 margin: 0 auto -4em;
+}
+
+.aboutme{
+    border-radius: 21px;
+	box-shadow: 3px 3px 2px #888888;
 }
 
 
