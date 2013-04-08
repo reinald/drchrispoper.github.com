@@ -475,11 +475,16 @@ iframe{
 #footer a {padding:1px; color:#472f2c;}
 #footer a:hover { color:#fff;}
 /* end our workaround */
-#facebook, #twitter, #resume {
+#facebook,  #resume {
 	float:right;
 	padding-left: 20px;
 	margin-left:20px;
 	
+}
+#twitter{
+	float:right;
+	padding-left: 28px;
+	margin-left:28px;
 }
 #facebook {background: url(../images/footer_facebook.png) no-repeat 0 center;}
 #twitter {background: url(../images/footer_twitter.png) no-repeat 0 center;}
