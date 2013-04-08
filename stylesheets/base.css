@@ -101,7 +101,7 @@ html{
 
 /* #Links
 ================================================== */
-	a, a:visited { color: #333; text-decoration: underline; outline: 0; }
+	a, a:visited { color: #333; text-decoration: underline; outline: 0; text-align:center;}
 	a:hover, a:focus { color: #000; }
 	p a, p a:visited { line-height: inherit; }
 
@@ -466,7 +466,7 @@ iframe{
 
 #footer {
 	height: 4em;
-/*	margin-top: 40px;*/
+	margin-top: 40px;
 	border-top:1px solid #472f2c;
 	color:#472f2c;
 }
@@ -485,21 +485,12 @@ iframe{
 #twitter {background: url(../images/footer_twitter.png) no-repeat 0 center;}
 #resume {background: url(../images/footer_resume.png) no-repeat 0 center;}
 
-.push {
-height: 4em;
-clear: both;
-}
-
-.wrapper {
-min-height: 100%;
-height: auto !important;
-height: 100%;
-margin: 0 auto -4em;
-}
 
 .aboutme{
     border-radius: 21px;
 	box-shadow: 3px 3px 2px #888888;
 }
 
-
+#info{
+	height: 260px;
+}
