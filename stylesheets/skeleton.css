@@ -26,6 +26,8 @@
     .container .columns                         { float: left; display: inline; margin-left: 0px; margin-right: 0px; }
     .row                                        { margin-bottom: 20px; }
 
+
+
     /* Nested Column Classes */
     .column.alpha, .columns.alpha               { margin-left: 10px; }
     .column.omega, .columns.omega               { margin-right: 0; }
