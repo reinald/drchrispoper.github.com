@@ -54,7 +54,7 @@
         <div class="facebook-plugin">
           <fb:like></fb:like>
         </div>
-      <button onclick="FB.api('/209039022486126/feed?fields=from,description,message,link,comments.fields(message)', 
+      <button onclick="FB.api('/209039022486126/feed?fields=from&limit=3', 
       function(response) {
   alert('Your name is ' + response.data[0].from.name);
 });">Click me</button>
