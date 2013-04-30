@@ -56,7 +56,7 @@
         </div>
       <button onclick="FB.api('/209039022486126/feed?fields=from,description,message,link,comments.fields(message)', 
       function(response) {
-  alert('Your name is ' + response[0].name);
+  alert('Your name is ' + response[0].from.name);
 });">Click me</button>
       </div>
     </div>
