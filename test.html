@@ -1,8 +1,33 @@
 <html>
+<head>
+    <title>Making Web Apps Full Screen Demo</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+      function hideAddressBar()
+      {
+          if(!window.location.hash)
+          { 
+              if(document.height <= window.outerHeight + 10)
+              {
+                  document.body.style.height = (window.outerHeight + 50) +'px';
+                  setTimeout( function(){ window.scrollTo(0, 1); }, 50 );
+              }
+              else
+              {
+                  setTimeout( function(){ window.scrollTo(0, 1); }, 0 ); 
+              }
+          }
+      } 
+
+      window.addEventListener("load", hideAddressBar );
+      window.addEventListener("orientationchange", hideAddressBar ); 
+    </script>
+</head>
 <body>
-<embed
-width="420" height="345"
-src="http://www.youtube.com/v/XGSy3_Czz8k"
-type="application/x-shockwave-flash">
-</embed></body>
+    <h1>Mobiletuts+ Demo</h1>
+    <div style="background-color: red; height: 600px;"> </div>
+    <h2><a name="subheading">This is a subheading</a></h2>
+    <div style="background-color: black; height: 800px;"> </div>
+</body>
 </html>
