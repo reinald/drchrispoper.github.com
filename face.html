@@ -30,22 +30,31 @@
 	console.log('Logged in');
     var uid = response.authResponse.userID;
     var accessToken = response.authResponse.accessToken;
+	$("#login").hide();
   } else if (response.status === 'not_authorized') {
     // the user is logged in to Facebook, 
     // but has not authenticated your app
 	console.log('Not auth the app');
-	// $("#content").hide();
+	$("#content").hide();
+	$("#logout").hide();
 	
   } else {
     // the user isn't logged in to Facebook.
 	console.log('User is not logged in');
 	$("#content").hide();
+	$("#logout").hide();
   }
  });
     };
     
 	
- 
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=452244601528255";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
     (function() {
       var e = document.createElement('script'); e.async = true;
       e.src = document.location.protocol +
@@ -65,6 +74,7 @@
 		<a href="facebook.html">
 			<img src="images/LogoD.png" border="0" alt="logo" style="width:385px;height:85px;">
 		</a>
+		<div class="fb-login-button" data-show-faces="true" data-width="200" data-max-rows="1"></div>
 		<button id="fb-logout" onclick="logout()">Log out</button>
     </div>
 	
