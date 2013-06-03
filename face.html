@@ -73,6 +73,18 @@
             console.log('User is now logged out');
         });
     }
+	
+	function getPics(){
+		FB.api('/209039022486126?fields=members.limit(5).fields(picture)', 
+      function(response) {
+  alert('Your name is ' + response.members.data[0].picture.data.url);
+	for(int i = 0;i<6;i++){
+		var carousel = $('#carousel').elastislide();
+		$('#carousel').append("<li><a href="#"><img src="response.members.data[i].picture.data.url" alt="image" /></a></li>");
+		carousel.add();
+	}
+});
+	}
   </script>
 
   <div id="header">
@@ -94,10 +106,7 @@
         <div class="facebook-plugin">
           <fb:like></fb:like>
         </div>
-      <button onclick="FB.api('/209039022486126?fields=members.fields(picture)', 
-      function(response) {
-  alert('Your name is ' + response.members.data[0].picture.data.url);
-});">Click me</button>
+      <button onclick="getPics()">Click me</button>
       </div>
     </div>
   </div> 
