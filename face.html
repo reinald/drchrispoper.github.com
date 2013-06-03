@@ -14,6 +14,25 @@
 <body>
   <div id="fb-root"></div>
   <script>
+	FB.getLoginStatus(function(response) {
+  if (response.status === 'connected') {
+    // the user is logged in and has authenticated your
+    // app, and response.authResponse supplies
+    // the user's ID, a valid access token, a signed
+    // request, and the time the access token 
+    // and signed request each expire
+    var uid = response.authResponse.userID;
+    var accessToken = response.authResponse.accessToken;
+  } else if (response.status === 'not_authorized') {
+    // the user is logged in to Facebook, 
+    // but has not authenticated your app
+	 $("body").hide();
+	
+  } else {
+    // the user isn't logged in to Facebook.
+	 $("body").hide();
+  }
+ });
     window.fbAsyncInit = function() {
       //Replace appId with your own
       FB.init({appId: '452244601528255', status: true, cookie: true,
@@ -46,20 +65,7 @@
   <div id="content">
     <div id="container">
       <div id="left-sidebar">
-        <div id="logo">
-          <img src="images/Logo.png" width="270" height="200">
-        </div>
-        <h2>Activity feed</h2>
-        <div class="facebook-plugin">
-          <fb:activity site="http://drchrispoper.github.io" header="false" width="260" height="325" font="arial" border_color="#fff"></fb:activity>
-        </div>
 
-        <h2>Recommendations</h2>
-        <div class="facebook-plugin">
-          <fb:recommendations site="corkd.com" header="false" width="260" height="350" font="arial" border_color="#fff"></fb:recommendations>
-        </div>
-      </div>
-      
       <div id="right-sidebar">
         <h1>Story Bar</h1>
         <div class="facebook-plugin">
