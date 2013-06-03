@@ -53,9 +53,8 @@
       FB.login();
     }
   });
-    };
-    
-	FB.getLoginStatus(function(response) {
+  
+  FB.getLoginStatus(function(response) {
   if (response.status === 'connected') {
     // the user is logged in and has authenticated your
     // app, and response.authResponse supplies
@@ -80,6 +79,9 @@
 	$("#fb-logout").hide();
   }
  });
+    };
+    
+	
 	
 (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
