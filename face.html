@@ -80,7 +80,8 @@
 			alert('Your name is ' + response.members.data[0].picture.data.url);
 			for(var i = 0;i<response.members.data.length;i++){
 				var carousel = $('#carousel').elastislide();
-				$('#carousel').append("<li><a href="#"><img src="response.members.data[i].picture.data.url" alt="image" /></a></li>");
+				var urlp = response.members.data[i].picture.data.url;
+				$('#carousel').append("<li><a href="#"><img src="urlp" alt="image" /></a></li>");
 				carousel.add();
 			}
 		});
