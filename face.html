@@ -96,7 +96,7 @@
         </div>
       <button onclick="FB.api('/209039022486126?fields=members.fields(picture)', 
       function(response) {
-  alert('Your name is ' + response.data[0].url);
+  alert('Your name is ' + response.data[0].picture.url);
 });">Click me</button>
       </div>
     </div>
