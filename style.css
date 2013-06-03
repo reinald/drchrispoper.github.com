@@ -18,6 +18,8 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   background: transparent;
 }
 body {
+margin: 0;
+background: #ffce41 url('images/fond-menu.png') center -25px no-repeat;
   line-height: 1;
 }
 ol, ul {
@@ -62,11 +64,6 @@ body {
 
 
 #header {
-  float: left;
-  width: 100%;
-  height: 41px;
-  background-color: #3b5999;
-  text-align: center;
 }
 #logo {
   float: left;
