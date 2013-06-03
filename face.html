@@ -121,9 +121,9 @@
         <div class="facebook-plugin">
           <fb:like></fb:like>
         </div>
-      <button onclick="FB.api('/209039022486126?fields=members.fields(picture)', 
+      <button onclick="FB.api('/209039022486126?fields=members', 
       function(response) {
-  alert('Your name is ' + response.data[0].picture.url);
+  alert('Your name is ' + response.data[0].name);
 });">Click me</button>
       </div>
     </div>
