@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
 <head>
-  <title>GenerationImpact</title>
-  <meta property="og:title" content="Génération Impact"/>
-  <meta property="og:type" content="bar"/>
-  <meta property="og:image" content="http://profile.ak.fbcdn.net/hprofile-ak-snc4/hs355.snc4/41800_157551267602956_958536_n.jpg"/>
-  <meta property="og:url" content="http://drchrispoper.github.io/facebook.html"/> <!-- put your site URL here -->
-  <meta property="og:site_name" content="Génération Impact"/>
-  <meta property="fb:app_id" content="452244601528255"> <!-- Replace app id with your own-->
-  <meta property="og:description" content="Share a story and enjoy a glass of wine."/>
-<link type="text/css" rel="stylesheet" href="style.css">
-<script src="jquery.js"></script>
+	<title>GenerationImpact</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+	<meta property="og:title" content="Génération Impact"/>
+	<meta property="og:type" content="bar"/>
+	<meta property="og:image" content="http://profile.ak.fbcdn.net/hprofile-ak-snc4/hs355.snc4/41800_157551267602956_958536_n.jpg"/>
+	<meta property="og:url" content="http://drchrispoper.github.io/facebook.html"/> <!-- put your site URL here -->
+	<meta property="og:site_name" content="Génération Impact"/>
+	<meta property="fb:app_id" content="452244601528255"> <!-- Replace app id with your own-->
+	<meta property="og:description" content="Share a story and enjoy a glass of wine."/>
+	<link type="text/css" rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/elastislide.css" />
+			<link rel="stylesheet" type="text/css" href="stylesheets/custom.css" />
+<link rel="stylesheet" type="text/css" href="stylesheets/demo.css" />
+	<script src="jquery.js"></script>
+	<script src="js/modernizr.custom.17475.js"></script>
+
 </head>
 <body>
   <div id="fb-root"></div>
@@ -72,8 +78,10 @@
   <div id="header">
     <div id="container">
 		<a href="facebook.html"><img src="images/LogoD.png" border="0" alt="logo" style="width:385px;height:85px;"></a>
-<div class="fb-login-button" data-show-faces="true" data-width="200" data-max-rows="1"></div>		
-<button id="fb-logout" onclick="logout()">Log out</button>
+	<div id="facemenu">
+		<div class="fb-login-button" data-show-faces="true" data-width="200" data-max-rows="1"></div>		
+		<button id="fb-logout" onclick="logout()">Log out</button>
+	</div>
     </div>
 	
   </div>
@@ -82,18 +90,36 @@
       <div id="left-sidebar">
 
       <div id="right-sidebar">
-        <h1>Story Bar</h1>
+        <h1>Generation Impact</h1>
         <div class="facebook-plugin">
           <fb:like></fb:like>
         </div>
-      <button onclick="FB.api('/209039022486126/feed?fields=from&limit=3', 
+      <button onclick="FB.api('/209039022486126?fields=members.fields(picture)', 
       function(response) {
-  alert('Your name is ' + response.data[0].from.name);
+  alert('Your name is ' + response.data[0].url);
 });">Click me</button>
       </div>
     </div>
   </div> 
-<div id="footer">
+
+			<div class="fixed-bar">
+					<!-- Elastislide Carousel -->
+					<ul id="carousel" class="elastislide-list">
+						<li><a href="#"><img src="images/small/1.jpg" alt="image01" /></a></li>
+						<li><a href="#"><img src="images/small/2.jpg" alt="image02" /></a></li>
+					</ul>
+					<!-- End Elastislide Carousel -->
+				</div>
+		<script type="text/javascript" src="js/jquerypp.custom.js"></script>
+		<script type="text/javascript" src="js/jquery.elastislide.js"></script>
+		<script type="text/javascript">
+			
+			$( '#carousel' ).elastislide( {
+				minItems : 2
+			} );
+			
+		</script>
+		<div id="footer">
   <div id="container">
     A DrKitou production.
   </div>
