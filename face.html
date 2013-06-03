@@ -14,6 +14,7 @@
 <body>
   <div id="fb-root"></div>
   <script>
+  $(document).ready(function() {
 	FB.getLoginStatus(function(response) {
   if (response.status === 'connected') {
     // the user is logged in and has authenticated your
@@ -32,6 +33,7 @@
     // the user isn't logged in to Facebook.
 	 $("body").hide();
   }
+ });
  });
     window.fbAsyncInit = function() {
       //Replace appId with your own
