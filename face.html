@@ -27,16 +27,19 @@
     // the user's ID, a valid access token, a signed
     // request, and the time the access token 
     // and signed request each expire
+	console.log('Logged in');
     var uid = response.authResponse.userID;
     var accessToken = response.authResponse.accessToken;
   } else if (response.status === 'not_authorized') {
     // the user is logged in to Facebook, 
     // but has not authenticated your app
-	 $("#content").hide();
+	console.log('Not auth the app');
+	// $("#content").hide();
 	
   } else {
     // the user isn't logged in to Facebook.
-	$("#content").hide();
+	console.log('User is not logged in');
+	// $("#content").hide();
   }
  });
     };
