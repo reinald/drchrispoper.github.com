@@ -14,8 +14,12 @@
 <body>
   <div id="fb-root"></div>
   <script>
-  $(document).ready(function() {
-	FB.getLoginStatus(function(response) {
+    window.fbAsyncInit = function() {
+      //Replace appId with your own
+      FB.init({appId: '452244601528255', status: true, cookie: true,
+               xfbml: true});
+			   
+			   FB.getLoginStatus(function(response) {
   if (response.status === 'connected') {
     // the user is logged in and has authenticated your
     // app, and response.authResponse supplies
@@ -34,13 +38,10 @@
 	 $("body").hide();
   }
  });
- });
-    window.fbAsyncInit = function() {
-      //Replace appId with your own
-      FB.init({appId: '452244601528255', status: true, cookie: true,
-               xfbml: true});
     };
     
+	
+ 
     (function() {
       var e = document.createElement('script'); e.async = true;
       e.src = document.location.protocol +
