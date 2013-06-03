@@ -10,6 +10,7 @@
   <meta property="fb:app_id" content="452244601528255"> <!-- Replace app id with your own-->
   <meta property="og:description" content="Share a story and enjoy a glass of wine."/>
 <link type="text/css" rel="stylesheet" href="style.css">
+<script src="jquery.js"></script>
 </head>
 <body>
   <div id="fb-root"></div>
@@ -31,11 +32,11 @@
   } else if (response.status === 'not_authorized') {
     // the user is logged in to Facebook, 
     // but has not authenticated your app
-	 document.getElementById('content').hide();
+	 $("content").hide();
 	
   } else {
     // the user isn't logged in to Facebook.
-	document.getElementById('content').hide();
+	$("content").hide();
   }
  });
     };
