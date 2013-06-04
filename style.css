@@ -64,6 +64,9 @@ body {
 
 
 #header {
+position: relative;
+margin: 0px auto;
+width: 900px;
 }
 #logo {
   float: left;
