@@ -81,8 +81,8 @@
 			for(var i = 0;i<response.members.data.length;i++){
 				var urlp = response.members.data[i].picture.data.url;
 				$('#carousel').append('<li><a href="#"><img src="'+urlp+'" alt="image" /></a></li>');
-				carousel.add();
 			}
+		carousel.add();
 		});
 	}
   </script>
