@@ -198,6 +198,9 @@
 		// when we resize the window, this will make sure minItems are always shown 
 		// (unless of course minItems is higher than the total number of elements)
 		minItems : 3,
+		// optionally specify a selector rather than using the img element to read the image sizes
+		// (we only use the first matching element within our items)
+		imgSizeItemSelector : 'img',
 		// index of the current item (left most item of the carousel)
 		start : 0,
 		// click item callback
@@ -306,6 +309,16 @@
 		},
 		_validate : function() {
 
+
+  			if( this.options.minItems instanceof Function ) {
+  		  
+  		  		this._minItemsFn = this.options.minItems;
+  		  		this.options.minItems = this.options.minItems( document.documentElement.clientWidth );
+  		
+  			}
+
+
+
 			if( this.options.speed < 0 ) {
 
 				this.options.speed = 500;
@@ -336,7 +349,7 @@
 			this.$wrapper = this.$carousel.parent().removeClass( 'elastislide-loading' );
 
 			// save original image sizes
-			var $img = this.$items.find( 'img:first' );
+			var $img = this.$items.find( this.options.imgSizeItemSelector ).first();
 			this.imgSize = { width : $img.outerWidth( true ), height : $img.outerHeight( true ) };
 
 			this._setItemsSize();
@@ -432,6 +445,11 @@
 			var self = this;
 
 			$window.on( 'debouncedresize.elastislide', function() {
+
+				if( self._minItemsFn ) {
+				  self.options.minItems = self._minItemsFn( document.documentElement.clientWidth );
+				}
+
 
 				self._setItemsSize();
 				self._configure();
@@ -617,8 +635,20 @@
 			}
 
 			if( this.support ) {
-				
-				this.options.orientation === 'horizontal' ? this.$el.css( 'transform', 'translateX(' + tvalue + 'px)' ) : this.$el.css( 'transform', 'translateY(' + tvalue + 'px)' );
+			
+		                if (this.options.orientation === 'horizontal') {
+		                    this.$el.css( '-webkit-transform', 'translateX(' + tvalue + 'px)' );
+		                    this.$el.css( '-o-transform', 'translateX(' + tvalue + 'px)' );
+		                    this.$el.css( '-ms-transform', 'translateX(' + tvalue + 'px)' );
+		                    this.$el.css( '-moz-transform', 'translateX(' + tvalue + 'px)' );
+		                    this.$el.css( 'transform', 'translateX(' + tvalue + 'px)' );
+		                } else {
+		                    this.$el.css( '-webkit-transform', 'translateY(' + tvalue + 'px)' );
+		                    this.$el.css( '-o-transform', 'translateY(' + tvalue + 'px)' );
+		                    this.$el.css( '-ms-transform', 'translateY(' + tvalue + 'px)' );
+		                    this.$el.css( '-moz-transform', 'translateY(' + tvalue + 'px)' );
+		                    this.$el.css( 'transform', 'translateY(' + tvalue + 'px)' );
+		                }
 
 			}
 			else {
@@ -724,13 +754,13 @@
 		// public method: slides to the next set of items
 		next : function() {
 
-			self._slide( 'next' );
+			this._slide( 'next' );
 
 		},
 		// public method: slides to the previous set of items
 		previous : function() {
 
-			self._slide( 'prev' );
+			this._slide( 'prev' );
 
 		},
 		// public method: slides to the first item
@@ -766,13 +796,13 @@
 	
 	$.fn.elastislide = function( options ) {
 
-		var self = $.data( this, 'elastislide' );
-		
 		if ( typeof options === 'string' ) {
 			
 			var args = Array.prototype.slice.call( arguments, 1 );
 			
 			this.each(function() {
+			
+				var self = $.data( this, 'elastislide' );
 			
 				if ( !self ) {
 
@@ -797,6 +827,8 @@
 		else {
 		
 			this.each(function() {
+				
+				var self = $.data( this, 'elastislide' );
 				
 				if ( self ) {
 
