@@ -80,7 +80,7 @@
 		var carousel = $('#carousel').elastislide();
 			for(var i = 0;i<response.members.data.length;i++){
 				var urlp = response.members.data[i].picture.data.url;
-				$('#carousel').append('<li><a href="#"><img src="'+urlp+'" alt="image" /></a></li>');
+				$('#carousel').append('<li><a href="#"><img src="'+urlp+'" alt="image" width="150" height="150" /></a></li>');
 			}
 		carousel.add();
 		});
