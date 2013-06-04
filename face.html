@@ -75,12 +75,12 @@
     }
 	
 	function getPics(){
-		FB.api('/209039022486126?fields=members.limit(5).fields(picture.height(150).width(150))', 
+		FB.api('/209039022486126?fields=members.limit(5).fields(picture.height(100).width(100))', 
 		function(response) {
 		var carousel = $('#carousel').elastislide();
 			for(var i = 0;i<response.members.data.length;i++){
 				var urlp = response.members.data[i].picture.data.url;
-				$('#carousel').append('<li><a href="#"><img src="'+urlp+'" alt="image" width="150" height="150" /></a></li>');
+				$('#carousel').append('<li><a href="#"><img src="'+urlp+'" alt="image" width="100" height="100" /></a></li>');
 			}
 		carousel.add();
 		});
@@ -114,8 +114,7 @@
 			<div class="fixed-bar">
 					<!-- Elastislide Carousel -->
 					<ul id="carousel" class="elastislide-list">
-						<li><a href="#"><img src="images/small/1.jpg" alt="image01" /></a></li>
-						<li><a href="#"><img src="images/small/2.jpg" alt="image02" /></a></li>
+
 					</ul>
 					<!-- End Elastislide Carousel -->
 				</div>
