@@ -75,11 +75,10 @@
     }
 	
 	function getPics(){
-		FB.api('/209039022486126?fields=members.limit(5).fields(picture)', 
+		FB.api('/209039022486126?fields=members.limit(5).fields(picture.height(150).width(150))', 
 		function(response) {
-			alert('Your name is ' + response.members.data[0].picture.data.url);
+		var carousel = $('#carousel').elastislide();
 			for(var i = 0;i<response.members.data.length;i++){
-				var carousel = $('#carousel').elastislide();
 				var urlp = response.members.data[i].picture.data.url;
 				$('#carousel').append('<li><a href="#"><img src="'+urlp+'" alt="image" /></a></li>');
 				carousel.add();
