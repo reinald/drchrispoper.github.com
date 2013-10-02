@@ -36,7 +36,7 @@
 					image.onload = function() {
 						var engine = new RainyDay('canvas','background', window.innerWidth, window.innerHeight, 1, getURLParameter("blur") || 20);
 	
-						var preset = getURLParameter("preset") || 1;
+						var preset = 3;
 						if (preset == 1) {
 							engine.gravity = engine.GRAVITY_NON_LINEAR;
 							engine.trail = engine.TRAIL_DROPS;
@@ -53,20 +53,17 @@
 						}
 					};
 					image.crossOrigin = "anonymous";
-					image.src="http://i.imgur.com/" + getURLParameter('imgur') + ".jpg";
+					image.src="http://i.imgur.com/nH2ziAk.jpg";
 	
-					var youtube = getURLParameter("youtube");
+					var youtube = "8zFi--dz4zg";
 					if (youtube) {
 						var div = document.getElementById("sound");
 						var player = document.createElement('iframe');
 						player.frameborder = "0";
-						if (!getURLParameter("novideo")) {
-							div.style.zIndex = 1000;
-							player.setAttribute("class", "video");
-						} else {
+			
 							player.height = "1";
 							player.width = "1";
-						}
+						
 						player.src = "https://youtube.com/embed/" + youtube + "?autoplay=1&controls=0&showinfo=0&autohide=1&loop=1";
 						div.appendChild(player);
 					}
