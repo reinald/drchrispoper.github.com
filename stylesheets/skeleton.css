@@ -21,7 +21,7 @@
 /* #Base 960 Grid
 ================================================== */
 
-    .container                                  { position: relative; width: 960px; margin: 0 auto; padding: 0px; height: 100%; min-height: 100%; margin: 0 auto -4em;}
+    .container                                  { position: absolute;top:10%;left:25%; width: 50%; margin: 0 auto; padding: 0px; height: 100%; min-height: 100%; margin: 0 auto -4em;}
     .container .column,
     .container .columns                         { float: left; display: inline; margin-left: 0px; margin-right: 0px; }
     .row                                        { margin-bottom: 20px; }
@@ -37,19 +37,19 @@
     .container .one.columns                     { width: 40px;  }
     .container .two.columns                     { width: 100px; }
     .container .three.columns                   { width: 160px; }
-    .container .four.columns                    { width: 220px; }
+    .container .four.columns                    { width: 25%; }
     .container .five.columns                    { width: 280px; }
-    .container .six.columns                     { width: 340px; }
+    .container .six.columns                     { width: 30%; }
     .container .seven.columns                   { width: 400px; }
     .container .eight.columns                   { width: 460px; }
     .container .nine.columns                    { width: 520px; }
-    .container .ten.columns                     { width: 580px; }
+    .container .ten.columns                     { width: 55%; }
     .container .eleven.columns                  { width: 640px; }
-    .container .twelve.columns                  { width: 700px; }
+    .container .twelve.columns                  { width: 65%;border-radius: 21px;background-color: rgba(200,200,200,0.5);text-align:center; float:right;}
     .container .thirteen.columns                { width: 760px; }
     .container .fourteen.columns                { width: 820px; }
     .container .fifteen.columns                 { width: 880px; }
-    .container .sixteen.columns                 { width: 940px; }
+    .container .sixteen.columns                 { width: 100%; }
 
     .container .one-third.column                { width: 300px; }
     .container .two-thirds.column               { width: 620px; }

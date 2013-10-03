@@ -492,8 +492,8 @@ iframe{
 
 
 .aboutme{
+display: block;
     border-radius: 21px;
-	box-shadow: 3px 3px 2px #888888;
 }
 
 #info{
