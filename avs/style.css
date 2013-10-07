@@ -342,8 +342,8 @@ h3#reply-title small { display: block; }
 .et_cufon_deactivated ul#main-menu li a { display: block; }
 #main-leftarea .penbg {
 position: absolute;
-right: 8px;
-top: -10px;
+right: -16px;
+top: -20px;
 height: 133px;
 width: 83px;
 z-index: 200;
