@@ -48,23 +48,16 @@
 	 			function demo() {
 					var image = document.getElementById('background');
 					image.onload = function() {
-						var engine = new RainyDay('canvas','background', window.innerWidth, window.innerHeight, 1, getURLParameter("blur") || 20);
-	
-						var preset = 1;
-						if (preset == 1) {
-							engine.gravity = engine.GRAVITY_NON_LINEAR;
-							engine.trail = engine.TRAIL_DROPS;
+						var engine = new RainyDay({
+								element: 'background',
+								blur: 10,
+								opacity: 1,
+								fps: 30,
+								speed: 30,
+								autoHide: true
+							});
 							engine.rain([ engine.preset(3, 3, 0.88), engine.preset(5, 5, 0.9), engine.preset(6, 2, 1) ], 100);
-						} else if (preset == 2) {
-							engine.gravity = engine.GRAVITY_NON_LINEAR;
-	 						engine.trail = engine.TRAIL_DROPS;
-	 						engine.VARIABLE_GRAVITY_ANGLE = Math.PI / 8;
-							engine.rain([ engine.preset(0, 2, 0.5), engine.preset(4, 4, 1) ], 50);
-						} else if (preset == 3) {
-							engine.gravity = engine.GRAVITY_NON_LINEAR;
-	 						engine.trail = engine.TRAIL_SMUDGE;
-							engine.rain([ engine.preset(0, 2, 0.5), engine.preset(4, 4, 1) ], 50);
-						}
+	
 					};
 					image.crossOrigin = "anonymous";
 					image.src="./images/display.jpg";
@@ -98,7 +91,7 @@
 							<header id="header" class="sixteen columns">	
 								<!-- Branding (logo) -->
 								<div id="branding" class="sixteen columns alpha">
-									<h1><a href="index.html" title="Portfolio and Blog of Christopher Hockley">Christopher Hockley Dev</a></h1>
+									<h1><a title="Portfolio and Blog of Christopher Hockley">Christopher Hockley Dev</a></h1>
 								</div>
 							</header>
 			
