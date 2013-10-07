@@ -23,23 +23,11 @@
 -	<link rel="stylesheet" href="stylesheets/layout.css">
 
 	<style media="screen" type="text/css">
-				body {
-					overflow-y: hidden;
-				}
-				
-				#parent {
-					width: 100%;
-					height: 100%;
-					margin: 0 auto;
-					position: absolute;
-					top: 0px;
-					left: 0px;
-				}
-				
-				#parent img {
-					width: 100%;
-					height: 100%;
-				}
+				img { display: none; }
+				body { overflow: hidden; }
+				#canvas { position: absolute; top: 0px; left: 0px; }
+				#sound { position: absolute; width: 30%; height: 30%; overflow-y: auto; margin-left: 35%; -moz-border-radius: 15px; border-radius: 15px; background-color: #C4C4C4; opacity: 0.3; margin-top: 5%; }
+				.video { position: absolute; width: 90%; height: 80%; margin-left: 5%; margin-top: 5%; }
 			</style>
 			<script>
 			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -60,20 +48,26 @@
 	 			function demo() {
 					var image = document.getElementById('background');
 					image.onload = function() {
-						var engine = null;
-						engine = new RainyDay({
-								element: 'background',
-								blur: 10,
-								opacity: 1,
-								fps: 30,
-								speed: 30,
-								autoHide: false
-							});
-						engine.rain([ engine.preset(3, 3, 0.88), engine.preset(5, 5, 0.9), engine.preset(6, 2, 1) ], 100);
+						var engine = new RainyDay('canvas','background', window.innerWidth, window.innerHeight, 1, getURLParameter("blur") || 20);
 	
+						var preset = 1;
+						if (preset == 1) {
+							engine.gravity = engine.GRAVITY_NON_LINEAR;
+							engine.trail = engine.TRAIL_DROPS;
+							engine.rain([ engine.preset(3, 3, 0.88), engine.preset(5, 5, 0.9), engine.preset(6, 2, 1) ], 100);
+						} else if (preset == 2) {
+							engine.gravity = engine.GRAVITY_NON_LINEAR;
+	 						engine.trail = engine.TRAIL_DROPS;
+	 						engine.VARIABLE_GRAVITY_ANGLE = Math.PI / 8;
+							engine.rain([ engine.preset(0, 2, 0.5), engine.preset(4, 4, 1) ], 50);
+						} else if (preset == 3) {
+							engine.gravity = engine.GRAVITY_NON_LINEAR;
+	 						engine.trail = engine.TRAIL_SMUDGE;
+							engine.rain([ engine.preset(0, 2, 0.5), engine.preset(4, 4, 1) ], 50);
+						}
 					};
-					image.crossOrigin = 'anonymous';
-					image.src='http://drchrispoper.github.com/images/display.jpg';
+					image.crossOrigin = "anonymous";
+					image.src="./images/display.jpg";
 	
 					var youtube = "jU88COnFmAw";
 					if (youtube) {
@@ -93,8 +87,10 @@
 		</head>
 		<body onload="demo();">
 			<div id="sound" style="z-index: -1;"></div>
-			<div id="parent">
-				<img id="background" alt="background" src="" />
+			<img id="background" src="" />
+			<div id="cholder">
+				<canvas id="canvas">
+								</canvas>
 			</div>
 			<div class="container">
 			
@@ -102,7 +98,7 @@
 							<header id="header" class="sixteen columns">	
 								<!-- Branding (logo) -->
 								<div id="branding" class="sixteen columns alpha">
-									<h1><a title="Portfolio and Blog of Christopher Hockley">Christopher Hockley Dev</a></h1>
+									<h1><a href="index.html" title="Portfolio and Blog of Christopher Hockley">Christopher Hockley Dev</a></h1>
 								</div>
 							</header>
 			
