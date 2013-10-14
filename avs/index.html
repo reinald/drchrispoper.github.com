@@ -4,11 +4,13 @@
 
 <title>A votre service! | Just another WordPress site</title>
 
-<link rel="stylesheet" href="./style.css" type="text/css" media="screen">
+<link rel="stylesheet" type="text/css" href="screen.css" media="screen" />
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
 
 <script type="text/javascript">
    document.documentElement.className = 'js';
 </script><style type="text/css"></style>
+
 
 <link rel="stylesheet" id="et_page_templates-css" href="./page_templates.css" type="text/css" media="screen">
 <script type="text/javascript" src="./js/jquery.js"></script>
@@ -18,19 +20,39 @@
 
 <body class="home blog clearfix et_cufon_deactivated chrome et_includes_sidebar" style="">
 
-   <div id="main-leftarea" style="height: 100%; width:100%;background: url(images/test.png);">
-      <div class="topbg"></div>      
-      <div id="menu" style="position:initial;margin-top: 100px;">
-         <ul id="main-menu" style="text-align:center;">
-            <li><a href="entreprise.html" style="font-size: 50px;padding-bottom: 50px;">Entreprises</a></li>
-
-            <li><a href="particulier.html" style="font-size: 50px;padding-bottom: 50px;">Particuliers</a></li>
-                                          
-            <li><a href="etudiant.html" style="font-size: 50px;padding-bottom: 50px;">Étudiants</a></li>            
-         </ul>
-      </div> <!-- #main-menu -->
+   <div id="main-leftarea">
+      <div class="topbg"></div>  
+      <div class="colmask threecol">
+             <div class="colmid">
+                <div class="colleft">
+                   <div class="col1">
+                     <!-- Column 1 start -->
+                     <div class="backg">
+                        <img src="images/entreprise.jpg"/>
+                     <a href="entreprise.html" target="_blank" style="">Entreprises</a>
+                     </div>
+                     <!-- Column 1 end -->
+                   </div>
+                   <div class="col2">
+                      <!-- Column 2 start -->
+                      <div class="backg">
+                         <img src="images/pensite.png"/>
+                      <a href="particulier.html" target="_blank">Particuliers</a>
+                      <!-- Column 2 end -->
+                      </div>
+                   </div>
+                   <div class="col3">
+                      <!-- Column 3 start -->
+                      <div class="backg">
+                         <img src="images/etudiant.jpg"/>
+                      <a href="etudiant.html" target="_blank">Étudiants</a>
+                      </div>
+                      <!-- Column 3 end -->
+                   </div>
+                </div>
+             </div>
+          </div>
    </div> <!-- #main-leftarea -->
-		
 	<script type="text/javascript">
 /* <![CDATA[ */
 var et_ptemplates_strings = {"captcha":"Captcha","fill":"Fill","field":"field","invalid":"Invalid email"};
