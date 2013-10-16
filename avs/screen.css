@@ -9,13 +9,15 @@ body {
 	font-size:90%;
 }
 a {
+	opacity: 1;
 	color:#369;
 	text-decoration: none;
 	position: absolute;
-	bottom: 10%;
+	top: 10%;
 	font-family: Pacifico;
 	font-size: 50px;
 	width: 100%;
+	height: 100%;
 	left: 0;
 }
 a:hover {
@@ -137,11 +139,11 @@ text-align: center;
 }
 /* 3 Column settings */
 .threecol {
-		z-index: 10;
-	background: url(images/Logo2.png);
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		background-position: center;	/* right column background colour */
+	background-image: url(images/fond.png) !important;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+	background-position: center;	/* right column background colour */
 }
 .threecol .colmid {
 	right:33%;			/* width of the right column */
@@ -153,32 +155,44 @@ text-align: center;
 }
 
 .threecol .col1 {
-background-color: rgba(255,255,115,0.1);
+	background: url(images/entrepriseO.png);
+	background-repeat: no-repeat;
+	background-position:top;
+	background-size: 100%;
 	width:34%;			/* width of center column content (column width minus padding on either side) */
 	left:99%;			/* 100% plus left padding of center column */
 	height: 100%;
 }
 .threecol .col1:hover{
-	background-color: rgba(255,255,115,0.3);
+	/*background-color: rgba(255,255,115,0.3);*/
 }
 .threecol .col2 {
-background-color: rgba(57,230,57,0.1);
+	background: url(images/414376_2O.png);
+	background-repeat: no-repeat;
+	background-position:top;
+	background-size: 100%;
 	width:33%;			/* Width of left column content (column width minus padding on either side) */
 	left:32%;			/* width of (right column) plus (center column left and right padding) plus (left column left padding) */
 	height: 100%;
 }
 .threecol .col2:hover{
-	background-color: rgba(57,230,57,0.3);
+
+
+	/*background-color: rgba(57,230,57,0.3);*/
 }
 .threecol .col3 {
-background-color: rgba(230,103,175,0.1);
+		background: url(images/etudiantO.png);
+	background-repeat: no-repeat;
+	background-position:top;
+	background-size: 100%;
 	width:33%;			/* Width of right column content (column width minus padding on either side) */
 	left:66%;			/* Please make note of the brackets here:
 					(100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
 					height: 100%;
 }
 .threecol .col3:hover{
-	background-color: rgba(230,103,175,0.3);
+
+	/*background-color: rgba(230,103,175,0.3);*/
 }
 /* Footer styles */
 #footer {
