@@ -142,7 +142,7 @@ text-align: center;
 	background-image: url(images/fond.png) !important;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-size: 100%;
+	background-size: auto 100%;
 	background-position: center;	/* right column background colour */
 }
 .threecol .colmid {
