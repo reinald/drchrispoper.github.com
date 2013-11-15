@@ -1,0 +1,1204 @@
+/*Style for Siiiimple*
+--------------------*/
+body{
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+}
+.opl {
+position:relative;
+top:100px;
+left:0px;
+z-index:99999;
+}
+.opl a {
+width:73px;
+height:56px;
+text-indent:-9999px;
+display:block;
+background:url('https://s3.amazonaws.com/onepagelove/one-page-love-award.png') no-repeat;
+}
+
+
+#bg {
+    background-image:url('../img/gridme.png');
+    background-repeat:repeat-x repeat-y;
+    background-attachment:fixed;
+}
+
+a {
+    color:#fdf0bb;
+    text-decoration:none;
+}
+
+a:hover {
+    color:#555;
+    border-bottom: solid 1px #555;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.line {
+    width:60%;
+    height:1px;
+    background-color:#eee;
+    margin:0 auto;
+}
+
+.button {
+width:35%;
+height:auto;
+border:solid 2px #4FADE3;
+border-radius:50px;
+margin:0 auto;
+padding: 40px 60px;
+color: #4FADE3;
+cursor: pointer;
+font-size: 5vmin;
+text-decoration: none;
+text-align:center;
+text-decoration: none;
+background-color:#fff;
+    font-weight:400;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.button:hover {
+width:35%;
+border:solid 2px #fff;
+background-color:#4FADE3;
+margin:0 auto;
+padding: 40px 60px;
+color: #fff;
+cursor: pointer;
+font-size: 5vmin;
+text-decoration: none;
+text-align:center;
+    font-weight:400;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.section-main {
+    background-color:rgba(79, 173, 227, 1);
+    height:auto;
+}
+
+.section-1 {
+    background: #dc9579;
+    background: -moz-linear-gradient(top, #dc9579 0%, #ffc8ac 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #dc9579), color-stop(100%, #ffc8ac));
+    background: -webkit-linear-gradient(top, #dc9579 0%, #ffc8ac 100%);
+    background: -o-linear-gradient(top, #dc9579 0%, #ffc8ac 100%);
+    background: -ms-linear-gradient(top, #dc9579 0%, #ffc8ac 100%);
+    background: linear-gradient(to bottom, #dc9579 0%, #ffc8ac 100%);
+    padding-top:150px;
+    padding-bottom:180px;
+    height:auto;
+}
+
+.section-2 {
+    background: #ffffe1;
+    background: -moz-linear-gradient(top, #ffffe1 0%, #fffffb 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffe1), color-stop(100%, #fffffb));
+    background: -webkit-linear-gradient(top, #ffffe1 0%, #fffffb 100%);
+    background: -o-linear-gradient(top, #ffffe1 0%, #fffffb 100%);
+    background: -ms-linear-gradient(top, #ffffe1 0%, #fffffb 100%);
+    background: linear-gradient(to bottom, #ffffe1 0%, #fffffb 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffe1', endColorstr='#fffffb', GradientType=0);
+    padding-top:100px;
+    padding-bottom:100px;
+    height:auto;
+    border-bottom:solid 1px #eee;
+}
+
+.section-3 {
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 0%, #ffffe1 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #ffffe1));
+    background: -webkit-linear-gradient(top, #ffffff 0%, #ffffe1 100%);
+    background: -o-linear-gradient(top, #ffffff 0%, #ffffe1 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%, #ffffe1 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffe1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffe1', GradientType=0);
+    padding-top:100px;
+    padding-bottom:100px;
+    height:auto;
+    border-bottom:solid 1px #eee;
+}
+
+.section-4 {
+    background-color:#fdf0bb;
+    padding-top:100px;
+    padding-bottom:100px;
+    height:auto;
+}
+
+.download {
+    background: #e9a286;
+    background: -moz-linear-gradient(top, #e9a286 0%, #dc9579 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e9a286), color-stop(100%, #dc9579));
+    background: -webkit-linear-gradient(top, #e9a286 0%, #dc9579 100%);
+    background: -o-linear-gradient(top, #e9a286 0%, #dc9579 100%);
+    background: -ms-linear-gradient(top, #e9a286 0%, #dc9579 100%);
+    background: linear-gradient(to bottom, #e9a286 0%, #dc9579 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9a286', endColorstr='#dc9579', GradientType=0);
+    padding-top:50px;
+    padding-bottom:50px;
+    height:auto;
+}
+
+.footer {
+    background-color:#ffffe1;
+    padding-top:50px;
+    padding-bottom:25px;
+    height:auto;
+}
+
+#home-logo {
+    color:#fdf0bb;
+    font-size:19vmin;
+    padding-bottom:25px;
+    text-align:center;
+    margin:20px;
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+#home-logo-1 {
+    color:#fdf0bb;
+    font-size:9vmin;
+    text-align:center;
+    padding-top:25px;
+    margin:5px;
+}
+
+
+#intro {
+    color:#fdf0bb;
+    font-size:25px;
+    text-align:center;
+    padding-top:25px;
+    margin:15px;
+  }
+
+#arrow {
+    color:#fff;
+    text-align: right;
+    margin-right: 10%;
+}
+
+#arrow img{
+width: auto;
+max-height: 20%;
+}
+
+#intro-1 {
+    color:#a96246;
+    font-size:50px;
+    text-align:center;
+    padding-bottom:25px;
+    margin:15px;
+}
+
+#intro-1 img{
+max-width: 100%;
+height: 700px;
+margin-top: -350px;
+}
+
+#about {
+    color:#a96246;
+    font-size:20px;
+    text-align:left;
+    padding-top:25px;
+    margin:15px;
+    line-height:2.2;
+}
+
+#about-1 {
+    color:#555;
+    font-size:30px;
+    text-align:center;
+    padding-bottom:5px;
+}
+
+#download {
+    color:#ffffe1;
+    font-size:50px;
+    text-align:center;
+    padding-bottom:50px;
+    margin:15px;
+}
+
+#app-store{
+  text-align: center;
+}
+
+#download-1 {
+    color:#ffffe1;
+    font-size:20px;
+    text-align:center;
+    line-height:2.2;
+    padding-top:50px;
+    margin:15px;
+}
+
+
+#footer {
+    color:#555;
+    font-size:20px;
+    text-align:left;
+    line-height:2.2;
+    margin:15px;
+}
+
+#footer-1 {
+    color:#555;
+    font-size:20px;
+    text-align:right;
+    line-height:2.2;
+    margin:15px;
+}
+
+.panel {
+    height:auto;
+    width:99%;
+    background-color:#4FADE3;
+    border-radius:2px;
+    padding:5px;
+}
+
+.panel-text {
+    color:#fff;
+    font-size:2.5vmin;
+    text-align:left;
+    line-height:2.2;
+    text-align:center;
+}
+
+
+/*Style for Siiiimple*
+--------------------*/
+
+/*Helps With Paddings*/
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+/*Helps with padding*/
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+/*Floats Left + Padding*/
+[class*='col'] {
+    float:left;
+    padding:10px;
+}
+
+/*Floats Right + Padding*/
+[class*='col']:last-of-type {
+    float: right;
+    padding-right: 10px;
+}
+
+
+/*The Container*/ 
+
+.grid {
+  width: 100%;
+  max-width: 1130px;
+  min-width: 230px;
+  margin: 0 auto;
+  padding: 0 0px auto;
+}
+
+.grid-1 {
+  width: 100%;
+  max-width: 730px;
+  min-width: 230px;
+  margin: 0 auto;
+  padding: 0 0px auto;
+}
+
+.grid-2 {
+  width: 100%;
+  max-width: 1260px;
+  min-width: 230px;
+  margin: 0 auto;
+  padding: 0 0px auto;
+}
+
+
+
+/*Clears Children Elements*/
+
+.grid:after { 
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.grid-1:after { 
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.grid-2:after { 
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Helps With Images*/
+
+img {
+  max-width: 100%;
+  height: auto; 
+}
+
+
+
+/*Grid 1*/
+
+/*How to use it- Make sure the total number of col numbers eqaul 12 cols.
+Ex col-6 + col-6 = col12  Ex 2 col6 + col4 + col2 = col12*/
+
+
+.col-1 {width: 8.3%;}
+
+.col-2 {width: 16.6%;}
+
+.col-3 {width: 25%;}
+
+.col-4 {width: 33.3%;}
+
+.col-5 {width: 41.6%;}
+
+.col-6 {width: 50%;}
+
+.col-7 {width: 58.3%}
+
+.col-8 {width: 66.7%;}
+
+.col-9 {width: 75%;}
+
+.col-10 {width: 83.3%;}
+
+.col-11 {width: 91.6%;}
+
+.col-12 {width:100%;}
+
+
+
+/*Grid 2*/
+
+/*How to use it- Take the number 100 and divide it by the col number.
+Ex 100%/2% = 50% . So by that logic class col-2 should take up 50% of the defined container.*/
+
+
+.col_1 {width: 100%;}
+
+.col_2 {width: 50%;}
+
+.col_3 {width: 33.33333%;}
+
+.col_4 {width: 25%;}
+
+.col_5 {width: 20%;}
+
+.col_6 {width: 16.665%;}
+
+.col_7 {width: 14.285%;}
+
+.col_8 {width: 12.5%;}
+
+.col_9 {width: 11.111%;}
+
+.col_10 {width: 10%;}
+
+.col_11 {width: 9.09%;}
+
+.col_12 {width: 8.33%;}
+
+.col_2_3 {width: 66.6%;}
+
+.col_1_3 {width: 33.3%;}
+
+.col_4_5 {width: 80%;}
+
+.col_1_5 {width: 20%;}
+
+
+
+
+/*Media Queries*/
+
+
+@media (max-width: 630px) {
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12 {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 630px) {
+  .col_4,
+  .col_6,
+  .col_8,
+  .col_10,
+  .col_12,
+  .col_1_5,
+  .col_4_5 {
+    width: 50%;
+  }
+
+  .col_1,
+  .col_2,
+  .col_3,
+  .col_5,
+  .col_7,
+  .col_9,
+  .col_11, 
+  .col_1_3,
+  .col_2_3 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .col_1,
+  .col_2,
+  .col_3,
+  .col_4,
+  .col_5,
+  .col_6,
+  .col_7,
+  .col_8,
+  .col_9,
+  .col_10,
+  .col_11,
+  .col_12, 
+  .col_1_3,
+  .col_2_3, 
+  .col_1_5,
+  .col_4_5 {
+    width: 100%;
+  }
+}
+
+
+
+
+.gallery .control-operator:target ~ .controls .control-button {
+  color: #ccc;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.gallery .control-button:first-of-type,
+.items-2 .control-operator:nth-of-type(1):target ~ .controls .control-button:nth-of-type(1),
+.items-2 .control-operator:nth-of-type(2):target ~ .controls .control-button:nth-of-type(2),
+.items-3 .control-operator:nth-of-type(1):target ~ .controls .control-button:nth-of-type(1),
+.items-3 .control-operator:nth-of-type(2):target ~ .controls .control-button:nth-of-type(2),
+.items-3 .control-operator:nth-of-type(3):target ~ .controls .control-button:nth-of-type(3),
+.items-4 .control-operator:nth-of-type(1):target ~ .controls .control-button:nth-of-type(1),
+.items-4 .control-operator:nth-of-type(2):target ~ .controls .control-button:nth-of-type(2),
+.items-4 .control-operator:nth-of-type(3):target ~ .controls .control-button:nth-of-type(3),
+.items-4 .control-operator:nth-of-type(4):target ~ .controls .control-button:nth-of-type(4),
+.items-5 .control-operator:nth-of-type(1):target ~ .controls .control-button:nth-of-type(1),
+.items-5 .control-operator:nth-of-type(2):target ~ .controls .control-button:nth-of-type(2),
+.items-5 .control-operator:nth-of-type(3):target ~ .controls .control-button:nth-of-type(3),
+.items-5 .control-operator:nth-of-type(4):target ~ .controls .control-button:nth-of-type(4),
+.items-5 .control-operator:nth-of-type(5):target ~ .controls .control-button:nth-of-type(5) {
+  color: white;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.gallery .item:first-of-type {
+  position: static;
+  opacity: 1;
+}
+
+.gallery .item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.gallery .control-operator {
+  display: none;
+}
+
+.gallery .control-operator:target ~ .item {
+  pointer-events: none;
+  opacity: 0;
+  -webkit-animation: none;
+  -o-animation: none;
+  animation: none;
+}
+
+.gallery .control-operator:target ~ .controls .control-button {
+  -webkit-animation: none;
+  -o-animation: none;
+  animation: none;
+}
+
+@-webkit-keyframes controlAnimation-2 {
+  0% {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  14.3%, 50% {
+    color: white;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  64.3%, 100% {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+@-o-keyframes controlAnimation-2 {
+  0% {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  14.3%, 50% {
+    color: white;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  64.3%, 100% {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+@keyframes controlAnimation-2 {
+  0% {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  14.3%, 50% {
+    color: white;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  64.3%, 100% {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+@-webkit-keyframes galleryAnimation-2 {
+  0% {
+    opacity: 0;
+  }
+
+  14.3%, 50% {
+    opacity: 1;
+  }
+
+  64.3%, 100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes galleryAnimation-2 {
+  0% {
+    opacity: 0;
+  }
+
+  14.3%, 50% {
+    opacity: 1;
+  }
+
+  64.3%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes galleryAnimation-2 {
+  0% {
+    opacity: 0;
+  }
+
+  14.3%, 50% {
+    opacity: 1;
+  }
+
+  64.3%, 100% {
+    opacity: 0;
+  }
+}
+
+.items-2.autoplay .control-button {
+  -webkit-animation: controlAnimation-2 14s infinite;
+  -o-animation: controlAnimation-2 14s infinite;
+  animation: controlAnimation-2 14s infinite;
+}
+
+.items-2.autoplay .item {
+  -webkit-animation: galleryAnimation-2 14s infinite;
+  -o-animation: galleryAnimation-2 14s infinite;
+  animation: galleryAnimation-2 14s infinite;
+}
+
+.items-2 .control-operator:nth-of-type(1):target ~ .item:nth-of-type(1) {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.items-2 .control-button:nth-of-type(1),
+.items-2 .item:nth-of-type(1) {
+  -webkit-animation-delay: -2s;
+  -o-animation-delay: -2s;
+  animation-delay: -2s;
+}
+
+.items-2 .control-operator:nth-of-type(2):target ~ .item:nth-of-type(2) {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.items-2 .control-button:nth-of-type(2),
+.items-2 .item:nth-of-type(2) {
+  -webkit-animation-delay: 5s;
+  -o-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+@-webkit-keyframes controlAnimation-3 {
+  0% {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  9.5%, 33.3% {
+    color: white;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  42.9%, 100% {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+@-o-keyframes controlAnimation-3 {
+  0% {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  9.5%, 33.3% {
+    color: white;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  42.9%, 100% {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+@keyframes controlAnimation-3 {
+  0% {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  9.5%, 33.3% {
+    color: white;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  42.9%, 100% {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+@-webkit-keyframes galleryAnimation-3 {
+  0% {
+    opacity: 0;
+  }
+
+  9.5%, 33.3% {
+    opacity: 1;
+  }
+
+  42.9%, 100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes galleryAnimation-3 {
+  0% {
+    opacity: 0;
+  }
+
+  9.5%, 33.3% {
+    opacity: 1;
+  }
+
+  42.9%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes galleryAnimation-3 {
+  0% {
+    opacity: 0;
+  }
+
+  9.5%, 33.3% {
+    opacity: 1;
+  }
+
+  42.9%, 100% {
+    opacity: 0;
+  }
+}
+
+.items-3.autoplay .control-button {
+  -webkit-animation: controlAnimation-3 21s infinite;
+  -o-animation: controlAnimation-3 21s infinite;
+  animation: controlAnimation-3 21s infinite;
+}
+
+.items-3.autoplay .item {
+  -webkit-animation: galleryAnimation-3 21s infinite;
+  -o-animation: galleryAnimation-3 21s infinite;
+  animation: galleryAnimation-3 21s infinite;
+}
+
+.items-3 .control-operator:nth-of-type(1):target ~ .item:nth-of-type(1) {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.items-3 .control-button:nth-of-type(1),
+.items-3 .item:nth-of-type(1) {
+  -webkit-animation-delay: -2s;
+  -o-animation-delay: -2s;
+  animation-delay: -2s;
+}
+
+.items-3 .control-operator:nth-of-type(2):target ~ .item:nth-of-type(2) {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.items-3 .control-button:nth-of-type(2),
+.items-3 .item:nth-of-type(2) {
+  -webkit-animation-delay: 5s;
+  -o-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+.items-3 .control-operator:nth-of-type(3):target ~ .item:nth-of-type(3) {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.items-3 .control-button:nth-of-type(3),
+.items-3 .item:nth-of-type(3) {
+  -webkit-animation-delay: 12s;
+  -o-animation-delay: 12s;
+  animation-delay: 12s;
+}
+
+@-webkit-keyframes controlAnimation-4 {
+  0% {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  7.1%, 25% {
+    color: white;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  32.1%, 100% {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+@-o-keyframes controlAnimation-4 {
+  0% {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  7.1%, 25% {
+    color: white;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  32.1%, 100% {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+@keyframes controlAnimation-4 {
+  0% {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  7.1%, 25% {
+    color: white;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  32.1%, 100% {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+@-webkit-keyframes galleryAnimation-4 {
+  0% {
+    opacity: 0;
+  }
+
+  7.1%, 25% {
+    opacity: 1;
+  }
+
+  32.1%, 100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes galleryAnimation-4 {
+  0% {
+    opacity: 0;
+  }
+
+  7.1%, 25% {
+    opacity: 1;
+  }
+
+  32.1%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes galleryAnimation-4 {
+  0% {
+    opacity: 0;
+  }
+
+  7.1%, 25% {
+    opacity: 1;
+  }
+
+  32.1%, 100% {
+    opacity: 0;
+  }
+}
+
+.items-4.autoplay .control-button {
+  -webkit-animation: controlAnimation-4 28s infinite;
+  -o-animation: controlAnimation-4 28s infinite;
+  animation: controlAnimation-4 28s infinite;
+}
+
+.items-4.autoplay .item {
+  -webkit-animation: galleryAnimation-4 28s infinite;
+  -o-animation: galleryAnimation-4 28s infinite;
+  animation: galleryAnimation-4 28s infinite;
+}
+
+.items-4 .control-operator:nth-of-type(1):target ~ .item:nth-of-type(1) {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.items-4 .control-button:nth-of-type(1),
+.items-4 .item:nth-of-type(1) {
+  -webkit-animation-delay: -2s;
+  -o-animation-delay: -2s;
+  animation-delay: -2s;
+}
+
+.items-4 .control-operator:nth-of-type(2):target ~ .item:nth-of-type(2) {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.items-4 .control-button:nth-of-type(2),
+.items-4 .item:nth-of-type(2) {
+  -webkit-animation-delay: 5s;
+  -o-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+.items-4 .control-operator:nth-of-type(3):target ~ .item:nth-of-type(3) {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.items-4 .control-button:nth-of-type(3),
+.items-4 .item:nth-of-type(3) {
+  -webkit-animation-delay: 12s;
+  -o-animation-delay: 12s;
+  animation-delay: 12s;
+}
+
+.items-4 .control-operator:nth-of-type(4):target ~ .item:nth-of-type(4) {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.items-4 .control-button:nth-of-type(4),
+.items-4 .item:nth-of-type(4) {
+  -webkit-animation-delay: 19s;
+  -o-animation-delay: 19s;
+  animation-delay: 19s;
+}
+
+@-webkit-keyframes controlAnimation-5 {
+  0% {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  5.7%, 20% {
+    color: white;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  25.7%, 100% {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+@-o-keyframes controlAnimation-5 {
+  0% {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  5.7%, 20% {
+    color: white;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  25.7%, 100% {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+@keyframes controlAnimation-5 {
+  0% {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  5.7%, 20% {
+    color: white;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  25.7%, 100% {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+@-webkit-keyframes galleryAnimation-5 {
+  0% {
+    opacity: 0;
+  }
+
+  5.7%, 20% {
+    opacity: 1;
+  }
+
+  25.7%, 100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes galleryAnimation-5 {
+  0% {
+    opacity: 0;
+  }
+
+  5.7%, 20% {
+    opacity: 1;
+  }
+
+  25.7%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes galleryAnimation-5 {
+  0% {
+    opacity: 0;
+  }
+
+  5.7%, 20% {
+    opacity: 1;
+  }
+
+  25.7%, 100% {
+    opacity: 0;
+  }
+}
+
+.items-5.autoplay .control-button {
+  -webkit-animation: controlAnimation-5 35s infinite;
+  -o-animation: controlAnimation-5 35s infinite;
+  animation: controlAnimation-5 35s infinite;
+}
+
+.items-5.autoplay .item {
+  -webkit-animation: galleryAnimation-5 35s infinite;
+  -o-animation: galleryAnimation-5 35s infinite;
+  animation: galleryAnimation-5 35s infinite;
+}
+
+.items-5 .control-operator:nth-of-type(1):target ~ .item:nth-of-type(1) {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.items-5 .control-button:nth-of-type(1),
+.items-5 .item:nth-of-type(1) {
+  -webkit-animation-delay: -2s;
+  -o-animation-delay: -2s;
+  animation-delay: -2s;
+}
+
+.items-5 .control-operator:nth-of-type(2):target ~ .item:nth-of-type(2) {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.items-5 .control-button:nth-of-type(2),
+.items-5 .item:nth-of-type(2) {
+  -webkit-animation-delay: 5s;
+  -o-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+.items-5 .control-operator:nth-of-type(3):target ~ .item:nth-of-type(3) {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.items-5 .control-button:nth-of-type(3),
+.items-5 .item:nth-of-type(3) {
+  -webkit-animation-delay: 12s;
+  -o-animation-delay: 12s;
+  animation-delay: 12s;
+}
+
+.items-5 .control-operator:nth-of-type(4):target ~ .item:nth-of-type(4) {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.items-5 .control-button:nth-of-type(4),
+.items-5 .item:nth-of-type(4) {
+  -webkit-animation-delay: 19s;
+  -o-animation-delay: 19s;
+  animation-delay: 19s;
+}
+
+.items-5 .control-operator:nth-of-type(5):target ~ .item:nth-of-type(5) {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.items-5 .control-button:nth-of-type(5),
+.items-5 .item:nth-of-type(5) {
+  -webkit-animation-delay: 26s;
+  -o-animation-delay: 26s;
+  animation-delay: 26s;
+}
+
+.gallery .control-button {
+  color: #ccc;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.gallery .control-button:hover {
+  color: white;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/*
+  Theme controls how everything looks in Gallery CSS.
+*/
+
+.gallery {
+  position: relative;
+}
+
+.gallery .item {
+  height: auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.gallery .controls {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.gallery .control-button {
+  display: inline-block;
+  margin: 0 .02em;
+  font-size: 3em;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: color .1s;
+  -o-transition: color .1s;
+  transition: color .1s;
+}
