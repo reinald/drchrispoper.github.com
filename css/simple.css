@@ -156,7 +156,11 @@ border-bottom: 5px #784628 solid;
     font-weight: 400;
 }
 
-
+#home-logo img{
+max-height: 19vmin;
+width: auto;
+margin-right: 0.3em;
+}
 #home-logo-1 {
     color:#fdf0bb;
     font-size:9vmin;
