@@ -33,10 +33,10 @@ a {
 
 a:hover {
     color:#555;
-    border-bottom: solid 1px #555;
     -webkit-transition: all 500ms ease;
     -o-transition: all 500ms ease;
     transition: all 500ms ease;
+    text-decoration:none;
 }
 
 .line {
@@ -91,8 +91,8 @@ text-align:center;
 }
 
 .section-1 {
-    background: #F04647;
-
+    background: F04647;
+    background-image:url('../011.png');
     padding-top:150px;
     padding-bottom:180px;
     height:auto;
@@ -130,7 +130,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd1ad', endC
 .download {
 border-top: 5px #784628 solid;
 border-bottom: 5px #784628 solid;
-    background: #F04647;
+    background: F04647;
+    background-image:url('../011.png');
     padding-top:50px;
     padding-bottom:50px;
     height:auto;
