@@ -9,6 +9,17 @@
    v1.1 2005-06-16 wrap it up in an object
 */
 
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if ($(window).scrollTop() > 50){
+            $('#arrow').css('opacity','0');
+        }
+    else if ($(window).scrollTop() < 50){
+            $('#arrow').css('opacity','1');
+        }
+    });
+});
+
 var ss = {
   fixAllLinks: function() {
     // Get a list of all links in the page

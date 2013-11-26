@@ -5,6 +5,19 @@ body{
   font-style: normal;
   font-weight: 400;
 }
+#menu {
+  z-index: 50;
+  list-style-type: none;
+  position: fixed;
+  right: 10%;
+  top: 70%;
+}
+
+#menu img{
+width: auto;
+max-height: 20%;
+}
+
 .opl {
 position:relative;
 top:100px;
@@ -180,9 +193,17 @@ margin-right: 0.3em;
   }
 
 #arrow {
+    z-index: 51;
     color:#fff;
     text-align: right;
-    margin-right: 10%;
+    right: 10%;
+    position: absolute;
+    top: 70%;
+    opacity: 1;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
 }
 
 #arrow img{
