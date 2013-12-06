@@ -34,7 +34,6 @@ background:url('https://s3.amazonaws.com/onepagelove/one-page-love-award.png') n
 
 
 #bg {
-    background-image:url('../img/gridme.png');
     background-repeat:repeat-x repeat-y;
     background-attachment:fixed;
 }
@@ -152,12 +151,11 @@ border-bottom: 5px #784628 solid;
 
 .footer {
     background-color:#ffffe0;
-    padding-top:50px;
-    padding-bottom:25px;
     height:auto;
 }
 
 #home-logo {
+vertical-align: top;
     color:#fdf0bb;
     font-size:19vmin;
     text-shadow: 5px 5px #784628;
@@ -165,9 +163,7 @@ border-bottom: 5px #784628 solid;
     text-align:center;
     margin:20px;
     letter-spacing: 0.3em;
-    font-family: "Quicksand";
-    font-style: normal;
-    font-weight: 400;
+    font-family: 'Varela Round', sans-serif;
 }
 
 #home-logo img{
@@ -521,694 +517,214 @@ Ex 100%/2% = 50% . So by that logic class col-2 should take up 50% of the define
   }
 }
 
-
-
-
-.gallery .control-operator:target ~ .controls .control-button {
-  color: #ccc;
-  color: rgba(255, 255, 255, 0.4);
-}
-
-.gallery .control-button:first-of-type,
-.items-2 .control-operator:nth-of-type(1):target ~ .controls .control-button:nth-of-type(1),
-.items-2 .control-operator:nth-of-type(2):target ~ .controls .control-button:nth-of-type(2),
-.items-3 .control-operator:nth-of-type(1):target ~ .controls .control-button:nth-of-type(1),
-.items-3 .control-operator:nth-of-type(2):target ~ .controls .control-button:nth-of-type(2),
-.items-3 .control-operator:nth-of-type(3):target ~ .controls .control-button:nth-of-type(3),
-.items-4 .control-operator:nth-of-type(1):target ~ .controls .control-button:nth-of-type(1),
-.items-4 .control-operator:nth-of-type(2):target ~ .controls .control-button:nth-of-type(2),
-.items-4 .control-operator:nth-of-type(3):target ~ .controls .control-button:nth-of-type(3),
-.items-4 .control-operator:nth-of-type(4):target ~ .controls .control-button:nth-of-type(4),
-.items-5 .control-operator:nth-of-type(1):target ~ .controls .control-button:nth-of-type(1),
-.items-5 .control-operator:nth-of-type(2):target ~ .controls .control-button:nth-of-type(2),
-.items-5 .control-operator:nth-of-type(3):target ~ .controls .control-button:nth-of-type(3),
-.items-5 .control-operator:nth-of-type(4):target ~ .controls .control-button:nth-of-type(4),
-.items-5 .control-operator:nth-of-type(5):target ~ .controls .control-button:nth-of-type(5) {
-  color: white;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.gallery .item:first-of-type {
-  position: static;
-  opacity: 1;
-}
-
-.gallery .item {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  -webkit-transition: opacity .5s;
-  -o-transition: opacity .5s;
-  transition: opacity .5s;
-}
-
-.gallery .control-operator {
-  display: none;
-}
-
-.gallery .control-operator:target ~ .item {
-  pointer-events: none;
-  opacity: 0;
-  -webkit-animation: none;
-  -o-animation: none;
-  animation: none;
-}
-
-.gallery .control-operator:target ~ .controls .control-button {
-  -webkit-animation: none;
-  -o-animation: none;
-  animation: none;
-}
-
-@-webkit-keyframes controlAnimation-2 {
-  0% {
-    color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
-  }
-
-  14.3%, 50% {
-    color: white;
-    color: rgba(255, 255, 255, 0.8);
-  }
-
-  64.3%, 100% {
-    color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
-  }
-}
-
-@-o-keyframes controlAnimation-2 {
-  0% {
-    color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
-  }
-
-  14.3%, 50% {
-    color: white;
-    color: rgba(255, 255, 255, 0.8);
-  }
-
-  64.3%, 100% {
-    color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
-  }
-}
-
-@keyframes controlAnimation-2 {
-  0% {
-    color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
-  }
-
-  14.3%, 50% {
-    color: white;
-    color: rgba(255, 255, 255, 0.8);
-  }
-
-  64.3%, 100% {
-    color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
-  }
-}
-
-@-webkit-keyframes galleryAnimation-2 {
-  0% {
-    opacity: 0;
-  }
-
-  14.3%, 50% {
-    opacity: 1;
-  }
-
-  64.3%, 100% {
-    opacity: 0;
-  }
-}
-
-@-o-keyframes galleryAnimation-2 {
-  0% {
-    opacity: 0;
-  }
-
-  14.3%, 50% {
-    opacity: 1;
-  }
-
-  64.3%, 100% {
-    opacity: 0;
-  }
-}
-
-@keyframes galleryAnimation-2 {
-  0% {
-    opacity: 0;
-  }
-
-  14.3%, 50% {
-    opacity: 1;
-  }
-
-  64.3%, 100% {
-    opacity: 0;
-  }
-}
-
-.items-2.autoplay .control-button {
-  -webkit-animation: controlAnimation-2 14s infinite;
-  -o-animation: controlAnimation-2 14s infinite;
-  animation: controlAnimation-2 14s infinite;
-}
-
-.items-2.autoplay .item {
-  -webkit-animation: galleryAnimation-2 14s infinite;
-  -o-animation: galleryAnimation-2 14s infinite;
-  animation: galleryAnimation-2 14s infinite;
-}
-
-.items-2 .control-operator:nth-of-type(1):target ~ .item:nth-of-type(1) {
-  pointer-events: auto;
-  opacity: 1;
-}
-
-.items-2 .control-button:nth-of-type(1),
-.items-2 .item:nth-of-type(1) {
-  -webkit-animation-delay: -2s;
-  -o-animation-delay: -2s;
-  animation-delay: -2s;
-}
-
-.items-2 .control-operator:nth-of-type(2):target ~ .item:nth-of-type(2) {
-  pointer-events: auto;
-  opacity: 1;
-}
-
-.items-2 .control-button:nth-of-type(2),
-.items-2 .item:nth-of-type(2) {
-  -webkit-animation-delay: 5s;
-  -o-animation-delay: 5s;
-  animation-delay: 5s;
-}
-
-@-webkit-keyframes controlAnimation-3 {
-  0% {
-    color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
-  }
-
-  9.5%, 33.3% {
-    color: white;
-    color: rgba(255, 255, 255, 0.8);
-  }
-
-  42.9%, 100% {
-    color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
-  }
-}
-
-@-o-keyframes controlAnimation-3 {
-  0% {
-    color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
-  }
-
-  9.5%, 33.3% {
-    color: white;
-    color: rgba(255, 255, 255, 0.8);
-  }
-
-  42.9%, 100% {
-    color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
-  }
-}
-
-@keyframes controlAnimation-3 {
-  0% {
-    color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
-  }
-
-  9.5%, 33.3% {
-    color: white;
-    color: rgba(255, 255, 255, 0.8);
-  }
-
-  42.9%, 100% {
-    color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
-  }
-}
-
-@-webkit-keyframes galleryAnimation-3 {
-  0% {
-    opacity: 0;
-  }
-
-  9.5%, 33.3% {
-    opacity: 1;
-  }
-
-  42.9%, 100% {
-    opacity: 0;
-  }
-}
-
-@-o-keyframes galleryAnimation-3 {
-  0% {
-    opacity: 0;
-  }
-
-  9.5%, 33.3% {
-    opacity: 1;
-  }
-
-  42.9%, 100% {
-    opacity: 0;
-  }
-}
-
-@keyframes galleryAnimation-3 {
-  0% {
-    opacity: 0;
-  }
-
-  9.5%, 33.3% {
-    opacity: 1;
-  }
-
-  42.9%, 100% {
-    opacity: 0;
-  }
-}
-
-.items-3.autoplay .control-button {
-  -webkit-animation: controlAnimation-3 21s infinite;
-  -o-animation: controlAnimation-3 21s infinite;
-  animation: controlAnimation-3 21s infinite;
-}
-
-.items-3.autoplay .item {
-  -webkit-animation: galleryAnimation-3 21s infinite;
-  -o-animation: galleryAnimation-3 21s infinite;
-  animation: galleryAnimation-3 21s infinite;
-}
-
-.items-3 .control-operator:nth-of-type(1):target ~ .item:nth-of-type(1) {
-  pointer-events: auto;
-  opacity: 1;
-}
-
-.items-3 .control-button:nth-of-type(1),
-.items-3 .item:nth-of-type(1) {
-  -webkit-animation-delay: -2s;
-  -o-animation-delay: -2s;
-  animation-delay: -2s;
-}
-
-.items-3 .control-operator:nth-of-type(2):target ~ .item:nth-of-type(2) {
-  pointer-events: auto;
-  opacity: 1;
-}
-
-.items-3 .control-button:nth-of-type(2),
-.items-3 .item:nth-of-type(2) {
-  -webkit-animation-delay: 5s;
-  -o-animation-delay: 5s;
-  animation-delay: 5s;
-}
-
-.items-3 .control-operator:nth-of-type(3):target ~ .item:nth-of-type(3) {
-  pointer-events: auto;
-  opacity: 1;
-}
-
-.items-3 .control-button:nth-of-type(3),
-.items-3 .item:nth-of-type(3) {
-  -webkit-animation-delay: 12s;
-  -o-animation-delay: 12s;
-  animation-delay: 12s;
-}
-
-@-webkit-keyframes controlAnimation-4 {
-  0% {
-    color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
-  }
-
-  7.1%, 25% {
-    color: white;
-    color: rgba(255, 255, 255, 0.8);
-  }
-
-  32.1%, 100% {
-    color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
-  }
-}
-
-@-o-keyframes controlAnimation-4 {
-  0% {
-    color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
-  }
-
-  7.1%, 25% {
-    color: white;
-    color: rgba(255, 255, 255, 0.8);
-  }
-
-  32.1%, 100% {
-    color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
-  }
-}
-
-@keyframes controlAnimation-4 {
-  0% {
-    color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
-  }
-
-  7.1%, 25% {
-    color: white;
-    color: rgba(255, 255, 255, 0.8);
-  }
-
-  32.1%, 100% {
-    color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
-  }
-}
-
-@-webkit-keyframes galleryAnimation-4 {
-  0% {
-    opacity: 0;
-  }
-
-  7.1%, 25% {
-    opacity: 1;
-  }
-
-  32.1%, 100% {
-    opacity: 0;
-  }
-}
-
-@-o-keyframes galleryAnimation-4 {
-  0% {
-    opacity: 0;
-  }
-
-  7.1%, 25% {
-    opacity: 1;
-  }
-
-  32.1%, 100% {
-    opacity: 0;
-  }
-}
-
-@keyframes galleryAnimation-4 {
-  0% {
-    opacity: 0;
-  }
-
-  7.1%, 25% {
-    opacity: 1;
-  }
-
-  32.1%, 100% {
-    opacity: 0;
-  }
-}
-
-.items-4.autoplay .control-button {
-  -webkit-animation: controlAnimation-4 28s infinite;
-  -o-animation: controlAnimation-4 28s infinite;
-  animation: controlAnimation-4 28s infinite;
-}
-
-.items-4.autoplay .item {
-  -webkit-animation: galleryAnimation-4 28s infinite;
-  -o-animation: galleryAnimation-4 28s infinite;
-  animation: galleryAnimation-4 28s infinite;
-}
-
-.items-4 .control-operator:nth-of-type(1):target ~ .item:nth-of-type(1) {
-  pointer-events: auto;
-  opacity: 1;
+.footer{
+  text-align: center;
+  font-size: 100%;
+  padding-bottom: 6em;
 }
-
-.items-4 .control-button:nth-of-type(1),
-.items-4 .item:nth-of-type(1) {
-  -webkit-animation-delay: -2s;
-  -o-animation-delay: -2s;
-  animation-delay: -2s;
-}
-
-.items-4 .control-operator:nth-of-type(2):target ~ .item:nth-of-type(2) {
-  pointer-events: auto;
-  opacity: 1;
+/* line 27, ../sass/style.scss */
+.header {
+text-align: center;
 }
-
-.items-4 .control-button:nth-of-type(2),
-.items-4 .item:nth-of-type(2) {
-  -webkit-animation-delay: 5s;
-  -o-animation-delay: 5s;
-  animation-delay: 5s;
+/* line 30, ../sass/style.scss */
+.header h1 {
+  font-style: italic;
+  font-size: 30px;
+  font-weight: 400;
 }
 
-.items-4 .control-operator:nth-of-type(3):target ~ .item:nth-of-type(3) {
-  pointer-events: auto;
-  opacity: 1;
+.footer h1 {
+  font-size: 25px;
+  font-weight: 400;
 }
 
-.items-4 .control-button:nth-of-type(3),
-.items-4 .item:nth-of-type(3) {
-  -webkit-animation-delay: 12s;
-  -o-animation-delay: 12s;
-  animation-delay: 12s;
+/* line 35, ../sass/style.scss */
+.avatar {
+  -webkit-box-shadow: 0 0 0px 3px white, 0 0 0 4px #cccccc, 0 4px 6px #333333;
+  -moz-box-shadow: 0 0 0px 3px white, 0 0 0 4px #cccccc, 0 4px 6px #333333;
+  box-shadow: 0 0 0px 3px white, 0 0 0 4px #cccccc, 0 4px 6px #333333;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
 }
 
-.items-4 .control-operator:nth-of-type(4):target ~ .item:nth-of-type(4) {
-  pointer-events: auto;
-  opacity: 1;
+/* line 68, ../sass/style.scss */
+.footer p {
+  color: #777;
 }
 
-.items-4 .control-button:nth-of-type(4),
-.items-4 .item:nth-of-type(4) {
-  -webkit-animation-delay: 19s;
-  -o-animation-delay: 19s;
-  animation-delay: 19s;
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
-@-webkit-keyframes controlAnimation-5 {
-  0% {
-    color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
-  }
-
-  5.7%, 20% {
-    color: white;
-    color: rgba(255, 255, 255, 0.8);
-  }
-
-  25.7%, 100% {
-    color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
-  }
+/* line 91, ../sass/style.scss */
+.icon-facebook:before,
+.icon-soundcloud:before,
+.icon-instagram:before,
+.icon-twitter:before,
+.icon-steam:before,
+.icon-linkedin:before {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
 }
 
-@-o-keyframes controlAnimation-5 {
-  0% {
-    color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
-  }
-
-  5.7%, 20% {
-    color: white;
-    color: rgba(255, 255, 255, 0.8);
-  }
-
-  25.7%, 100% {
-    color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
-  }
+/* line 100, ../sass/style.scss */
+.icon-facebook:before {
+  content: "\e602";
 }
-
-@keyframes controlAnimation-5 {
-  0% {
-    color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
-  }
 
-  5.7%, 20% {
-    color: white;
-    color: rgba(255, 255, 255, 0.8);
-  }
-
-  25.7%, 100% {
-    color: #ccc;
-    color: rgba(255, 255, 255, 0.4);
-  }
+/* line 103, ../sass/style.scss */
+.icon-soundcloud:before {
+  content: "\e604";
 }
-
-@-webkit-keyframes galleryAnimation-5 {
-  0% {
-    opacity: 0;
-  }
 
-  5.7%, 20% {
-    opacity: 1;
-  }
-
-  25.7%, 100% {
-    opacity: 0;
-  }
+/* line 106, ../sass/style.scss */
+.icon-instagram:before {
+  content: "\e601";
 }
-
-@-o-keyframes galleryAnimation-5 {
-  0% {
-    opacity: 0;
-  }
 
-  5.7%, 20% {
-    opacity: 1;
-  }
-
-  25.7%, 100% {
-    opacity: 0;
-  }
+/* line 109, ../sass/style.scss */
+.icon-twitter:before {
+  content: "\e606";
 }
-
-@keyframes galleryAnimation-5 {
-  0% {
-    opacity: 0;
-  }
 
-  5.7%, 20% {
-    opacity: 1;
-  }
-
-  25.7%, 100% {
-    opacity: 0;
-  }
+/* line 112, ../sass/style.scss */
+.icon-steam:before {
+  content: "\e603";
 }
 
-.items-5.autoplay .control-button {
-  -webkit-animation: controlAnimation-5 35s infinite;
-  -o-animation: controlAnimation-5 35s infinite;
-  animation: controlAnimation-5 35s infinite;
+/* line 115, ../sass/style.scss */
+.icon-linkedin:before {
+  content: "\e605";
 }
 
-.items-5.autoplay .item {
-  -webkit-animation: galleryAnimation-5 35s infinite;
-  -o-animation: galleryAnimation-5 35s infinite;
-  animation: galleryAnimation-5 35s infinite;
+/* Twitter */
+/* line 120, ../sass/style.scss */
+.icon-soundcloud {
+  color: #FF5C00;
 }
 
-.items-5 .control-operator:nth-of-type(1):target ~ .item:nth-of-type(1) {
-  pointer-events: auto;
-  opacity: 1;
+/* line 121, ../sass/style.scss */
+.icon-soundcloud:hover {
+  background: #FF5C00;
 }
 
-.items-5 .control-button:nth-of-type(1),
-.items-5 .item:nth-of-type(1) {
-  -webkit-animation-delay: -2s;
-  -o-animation-delay: -2s;
-  animation-delay: -2s;
+/* Instagram */
+/* line 123, ../sass/style.scss */
+.icon-instagram {
+  color: #634d40;
 }
 
-.items-5 .control-operator:nth-of-type(2):target ~ .item:nth-of-type(2) {
-  pointer-events: auto;
-  opacity: 1;
+/* line 124, ../sass/style.scss */
+.icon-instagram:hover {
+  background: #634d40;
 }
 
-.items-5 .control-button:nth-of-type(2),
-.items-5 .item:nth-of-type(2) {
-  -webkit-animation-delay: 5s;
-  -o-animation-delay: 5s;
-  animation-delay: 5s;
+/* Facebook */
+/* line 126, ../sass/style.scss */
+.icon-facebook {
+  color: #3b5998;
 }
 
-.items-5 .control-operator:nth-of-type(3):target ~ .item:nth-of-type(3) {
-  pointer-events: auto;
-  opacity: 1;
+/* line 127, ../sass/style.scss */
+.icon-facebook:hover {
+  background: #3b5998;
 }
 
-.items-5 .control-button:nth-of-type(3),
-.items-5 .item:nth-of-type(3) {
-  -webkit-animation-delay: 12s;
-  -o-animation-delay: 12s;
-  animation-delay: 12s;
+/* Twitter */
+/* line 129, ../sass/style.scss */
+.icon-twitter {
+  color: #55ACEE;
 }
 
-.items-5 .control-operator:nth-of-type(4):target ~ .item:nth-of-type(4) {
-  pointer-events: auto;
-  opacity: 1;
+/* line 130, ../sass/style.scss */
+.icon-twitter:hover {
+  background: #55ACEE;
 }
 
-.items-5 .control-button:nth-of-type(4),
-.items-5 .item:nth-of-type(4) {
-  -webkit-animation-delay: 19s;
-  -o-animation-delay: 19s;
-  animation-delay: 19s;
+/* Twitter */
+/* line 132, ../sass/style.scss */
+.icon-steam {
+  color: #000;
 }
 
-.items-5 .control-operator:nth-of-type(5):target ~ .item:nth-of-type(5) {
-  pointer-events: auto;
-  opacity: 1;
+/* line 133, ../sass/style.scss */
+.icon-steam:hover {
+  background: #000;
 }
 
-.items-5 .control-button:nth-of-type(5),
-.items-5 .item:nth-of-type(5) {
-  -webkit-animation-delay: 26s;
-  -o-animation-delay: 26s;
-  animation-delay: 26s;
+/* Twitter */
+/* line 135, ../sass/style.scss */
+.icon-linkedin {
+  color: #071871;
 }
 
-.gallery .control-button {
-  color: #ccc;
-  color: rgba(255, 255, 255, 0.4);
+/* line 136, ../sass/style.scss */
+.icon-linkedin:hover {
+  background: #071871;
 }
 
-.gallery .control-button:hover {
-  color: white;
-  color: rgba(255, 255, 255, 0.8);
+/* line 138, ../sass/style.scss */
+.social {
 }
-
-/*
-  Theme controls how everything looks in Gallery CSS.
-*/
-
-.gallery {
+/* line 142, ../sass/style.scss */
+.social li {
   position: relative;
-}
-
-.gallery .item {
-  height: auto;
-  overflow: hidden;
-  text-align: center;
-}
-
-.gallery .controls {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-}
-
-.gallery .control-button {
+  display: -moz-inline-stack;
   display: inline-block;
-  margin: 0 .02em;
-  font-size: 3em;
-  text-align: center;
-  text-decoration: none;
-  -webkit-transition: color .1s;
-  -o-transition: color .1s;
-  transition: color .1s;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  margin: .5em;
+  -webkit-transition: all 0.15s ease;
+  -moz-transition: all 0.15s ease;
+  -o-transition: all 0.15s ease;
+  transition: all 0.15s ease;
 }
+/* line 148, ../sass/style.scss */
+.social li:hover {
+  -webkit-transform: scale(1.25, 1.25);
+  -moz-transform: scale(1.25, 1.25);
+  -ms-transform: scale(1.25, 1.25);
+  -o-transform: scale(1.25, 1.25);
+  transform: scale(1.25, 1.25);
+  color: white;
+}
+/* line 153, ../sass/style.scss */
+.social li:before {
+  position: absolute;
+  width: 2em;
+  /* center align technique, give width, negative half margin */
+  margin-left: -1em;
+  top: 1.5em;
+  left: 50%;
+}
+/* line 161, ../sass/style.scss */
+.social li a {
+  display: block;
+  color: inherit;
+  padding: 2.5em 1em 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.photo{
+  float:left;
+  padding-right: 1em;
+  margin-top: 5px;
+}
+
